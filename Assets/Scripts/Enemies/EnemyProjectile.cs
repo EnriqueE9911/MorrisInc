@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class EnemyProjectile : EnemyDamage //Will damage the player every time they touch
 {
-       [SerializeField] private float speed;
-       [SerializeField] private float resetTime;
-       private float lifetime;
+    [SerializeField] private float speed;
+    [SerializeField] private float resetTime;
+    private float lifetime;
 
     public void ActivateProjectile()
     {
@@ -21,7 +21,7 @@ public class EnemyProjectile : EnemyDamage //Will damage the player every time t
             gameObject.SetActive(false);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    protected override void OnTriggerEnter2D(Collider2D collision)
     {
         base.OnTriggerEnter2D(collision); //Execute logic from parent script first
         gameObject.SetActive(false); //When this hits any object deactivate arrow
