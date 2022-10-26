@@ -4,21 +4,22 @@ public class ArrowTrap : MonoBehaviour
 {
     [SerializeField] private float attackCooldown;
     [SerializeField] private Transform firePoint;
-    [SerializeField] private GameObject[] fireballs;
+    [SerializeField] private GameObject[] arrows;
     private float cooldownTimer;
 
     private void Attack()
     {
         cooldownTimer = 0;
 
-        fireballs[FindFireball()].transform.position = firePoint.position; 
-        fireballs[FindFireball()].GetComponent<EnemyProjectile>().SetDirection(Mathf.Sign(transform.localScale.x));
+        arrows[FindArrow()].transform.position = firePoint.position;
+        arrows[FindArrow()].GetComponent<EnemyProjectile>().ActivateProjectile();
+
     }
-    private int FindFireball()
+    private int FindArrow()
     {
-        for (int i = 0; i < fireballs.Length; i++)
+        for (int i = 0; i < arrows.Length; i++)
         {
-            if (!fireballs[i].activeInHierarchy)
+            if (!arrows[i].activeInHierarchy)
                 return i;
         }
         return 0;
