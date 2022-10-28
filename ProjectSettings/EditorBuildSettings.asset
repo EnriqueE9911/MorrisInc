@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Levels/Gatusko 1.unity
-    guid: 269d7ecdefebb47f7b3412624acb97f4
+    path: Assets/Levels/Proyecto hasta video 6 bien.unity
+    guid: 7194b03d3cd5f45acb3670599bcdfe6f
   - enabled: 1
-    path: Assets/Levels/Gatusko 2.unity
-    guid: b69a3c595b45a496baddde59873ecee4
+    path: Assets/Levels/Proyecto hasta video 6 bien 1.unity
+    guid: ca4fcaf8e19044f7da2668e661eba2a1
   m_configObjects: {}
