@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5456185823066466408}
   - component: {fileID: 5456185823066466409}
   - component: {fileID: 5456185823066466410}
+  - component: {fileID: 2163610638014132026}
   - component: {fileID: 5456185823066466414}
   - component: {fileID: 5456185823066466412}
   - component: {fileID: 5456185823066466419}
@@ -138,6 +139,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &2163610638014132026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5456185823066466411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f70bd083b02a640198c25dd4e40814a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkpointSound: {fileID: 8300000, guid: 649bd3a19a9224742a2f744952ea9e7f, type: 3}
 --- !u!114 &5456185823066466414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,6 +166,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   jumpPower: 20
+  coyoteTime: 0.25
+  extraJumps: 2
+  wallJumpX: 2000
+  wallJumpY: 0
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
